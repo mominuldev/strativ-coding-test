@@ -331,6 +331,7 @@ class PostCard extends \Elementor\Widget_Base {
                 'type'      => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .strativ-post-card__date' => 'color: {{VALUE}};',
+                    '{{WRAPPER}} .strativ-post-card__date:after' => 'background: {{VALUE}};',
                 ],
             ]
         );

@@ -173,6 +173,93 @@ class VideoCard extends \Elementor\Widget_Base {
 
 		$this->end_controls_section();
 
+
+		$this->start_controls_section(
+			'section_category_style',
+			[
+				'label' => esc_html__( 'Category', 'strativ' ),
+				'tab'   => \Elementor\Controls_Manager::TAB_STYLE,
+			]
+		);
+
+		// Color
+		$this->add_control(
+			'category_color',
+			[
+				'label'     => esc_html__( 'Color', 'strativ' ),
+				'type'      => \Elementor\Controls_Manager::COLOR,
+				'selectors' => [
+					'{{WRAPPER}} .strativ-video-card__category' => 'color: {{VALUE}};',
+				],
+			]
+		);
+
+		// Typography
+		$this->add_group_control(
+			\Elementor\Group_Control_Typography::get_type(),
+			[
+				'name' => 'category_typography',
+				'label' => __( 'Typography', 'strativ' ),
+				'selector' => '{{WRAPPER}} .strativ-video-card__category',
+			]
+		);
+
+		// Text Shadow
+		$this->add_group_control(
+			\Elementor\Group_Control_Text_Shadow::get_type(),
+			[
+				'name' => 'category_text_shadow',
+				'label' => __( 'Text Shadow', 'strativ' ),
+				'selector' => '{{WRAPPER}} .strativ-video-card__category',
+			]
+		);
+
+		// Enable Text Stoke
+		$this->add_control(
+			'category_text_stroke',
+			[
+				'label' => __( 'Enable Text Stroke', 'strativ' ),
+				'type' => \Elementor\Controls_Manager::SWITCHER,
+				'label_on' => __( 'Show', 'strativ' ),
+				'label_off' => __( 'Hide', 'strativ' ),
+				'return_value' => 'yes',
+				'default' => 'no',
+			]
+		);
+
+		// Text Stroke Color
+		$this->add_control(
+			'category_text_stroke_color',
+			[
+				'label' => __( 'Text Stroke Color', 'strativ' ),
+				'type' => \Elementor\Controls_Manager::COLOR,
+				'selectors' => [
+					'{{WRAPPER}} .strativ-video-card__category' => '-webkit-text-stroke-color: {{VALUE}};',
+				],
+				'condition' => [
+					'category_text_stroke' => 'yes',
+				],
+			]
+		);
+
+		// Text Stroke Width
+		$this->add_control(
+			'category_text_stroke_width',
+			[
+				'label' => __( 'Text Stroke Width', 'strativ' ),
+				'type' => \Elementor\Controls_Manager::SLIDER,
+				'selectors' => [
+					'{{WRAPPER}} .strativ-video-card__category' => '-webkit-text-stroke-width: {{SIZE}}px;',
+				],
+				'condition' => [
+					'category_text_stroke' => 'yes',
+				],
+			]
+		);
+
+
+		$this->end_controls_section();
+
 		// Box Wrapper Style
 		$this->start_controls_section(
 			'section_box_wrapper_style',

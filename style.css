@@ -1383,8 +1383,16 @@ h3.strativ-video-card__title {
 
 	.newsletter-box img {
 		height: 690px !important;
-		width: 100%;
-		object-fit: cover;
+	}
+}
+
+@media(max-width: 440px) {
+	.newsletter-box {
+		min-height: 500px;
+	}
+
+	.newsletter-box img {
+		height: 500px !important;
 	}
 }
 
@@ -1430,6 +1438,13 @@ h2.newsletter-box__bottom-title {
 	text-transform: uppercase;
 	margin-bottom: 33px;
 }
+
+@media(max-width: 440px) {
+	h2.newsletter-box__bottom-title {
+		font-size: 26px;
+	}
+}
+
 
 .newsletter-section {
 	display: flex;
