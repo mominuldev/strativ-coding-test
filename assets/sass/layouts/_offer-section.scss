@@ -1,0 +1,92 @@
+.offers-section {
+	padding: 120px 0;
+	background: $color__secondary;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+
+	@media(min-width: 1600px) {
+		.container {
+			max-width: 1593px;
+		}
+	}
+
+}
+
+.offer__item {
+	background: $color__primary;
+	padding: 40px 40px 53px;
+	border-radius: 30px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.27);
+	position: relative;
+
+	@media(max-width: 991px) {
+		margin-bottom: 40px;
+	}
+
+	.offer__title {
+		font-size: 40px;
+		font-weight: 700;
+		color: $color__white;
+		margin-bottom: 20px;
+		min-height: 88px;
+
+		@media(max-width: 991px) {
+			font-size: 30px;
+			min-height: 65px
+		}
+
+		@media(max-width: 767px) {
+			min-height: auto;
+		}
+	}
+
+	.offer__description {
+		color: #000;
+		margin-bottom: 24px;
+	}
+
+	.offer__price {
+		background: #fff;
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.18);
+		padding: 17px 30px;
+		border-radius: 40px;
+		font-size: 42px;
+		font-weight: 700;
+		color: #0083C1;
+		line-height: 1;
+
+		@media(max-width: 991px) {
+			font-size: 30px;
+		}
+
+	}
+
+	.offer__date {
+		color: #fff;
+		text-align: center;
+		margin-top: 24px
+	}
+
+	.jumpin_btn-two {
+		background: $color__bg;
+		min-width: 230px;
+		text-align: center;
+		font-size: 25px;
+		font-weight: 700;
+		border-radius: 30px;
+		display: inline-block;
+		line-height: 1;
+		padding: 13px 40px;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: -23px;
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.18);
+		color: #008ec8;
+
+		&:hover {
+			color: #FF7339;
+		}
+	}
+}

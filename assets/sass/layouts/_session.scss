@@ -1,0 +1,270 @@
+.session-box__wrapper {
+	position: relative;
+	background: #fff;
+	padding: 90px 80px 80px;
+	border-radius: 17px;
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.27);
+	margin-bottom: 65px;
+	z-index: 2;
+
+	@media(max-width: 991px) {
+		padding: 60px 40px 30px;
+
+		.session__description {
+			font-size: 18px;
+		}
+	}
+}
+
+h2.session__title {
+	position: absolute;
+	display: inline-block;
+	font-size: 24px;
+	background: $color__secondary;
+	color: $color__white;
+	border-radius: 30px;
+	padding: 15px 30px;
+	left: 50%;
+	transform: translateX(-50%);
+	top: -29px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.18);
+
+	@media(max-width: 991px) {
+		width: 90%;
+		text-align: center;
+	}
+
+	@media(max-width: 380px) {
+		font-size: 20px;
+	}
+}
+
+.price-list__wrapper {
+	@media(min-width: 992px) {
+		display: flex;
+		flex-wrap: wrap;
+
+		> div {
+			width: 50%;
+		}
+	}
+}
+
+.price-list__wrapper {
+	margin-top: 30px;
+}
+
+.session__price-list {
+	font-size: 22px;
+
+	@media(max-width: 991px) {
+		text-align: center;
+	}
+
+	&:not(:last-child) {
+		margin-bottom: 10px;
+	}
+
+	strong {
+		font-weight: 700;
+		font-size: 28px;
+	}
+
+	span {
+		color: $color__primary;
+		font-size: 28px;
+	}
+}
+
+.session-bottom-description {
+	font-size: 14px;
+	text-align: center;
+	margin-bottom: 83px;
+}
+
+
+.session__note-message, .session__opening-time {
+	font-size: 18px;
+	margin-top: 30px;
+}
+
+.session-box__items {
+	.g-5, .gx-5 {
+		--bs-gutter-x: 6rem;
+	}
+}
+
+.page-content-top {
+	padding-top: 40px;
+}
+
+.page-template-tpl-burgess-waiver-rules-page {
+	.page-shape-bottom {
+		bottom: -4%
+	}
+}
+
+.session-box__item {
+	position: relative;
+	background: #fff;
+	padding: 46px 68px 50px;
+	border-radius: 17px;
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.27);
+	margin-bottom: 75px;
+	min-height: 304px;
+
+	@media(max-width: 991px) {
+		padding: 30px 30px 30px;
+		min-height: auto;
+	}
+
+	.session-box__item__price {
+		font-size: 28px;
+		font-weight: 700;
+		text-align: center;
+		color: #454545;
+		margin-bottom: 4px;
+	}
+
+	.session-box__item__title {
+		position: absolute;
+		display: inline-block;
+		font-size: 24px;
+		background: $color__secondary;
+		color: $color__white;
+		border-radius: 30px;
+		padding: 6px 30px;
+		left: 50%;
+		transform: translateX(-50%);
+		top: -29px;
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.18);
+		max-width: max-content;
+
+		@media(max-width: 991px) {
+			width: 90%;
+			text-align: center;
+		}
+
+		@media(max-width: 380px) {
+			font-size: 20px;
+		}
+	}
+
+	.session-box__item__description {
+		font-size: 18px;
+		margin: 0;
+	}
+}
+
+.opening-hours-section {
+	padding: 100px 0 225px;
+	position: relative;
+
+	@media(max-width: 991px) {
+		padding: 100px 0;
+	}
+}
+
+.opening-hours__wrapper {
+	position: relative;
+	max-width: 660px;
+	margin: 0 auto;
+	background: $color__primary;
+	padding: 75px 30px 55px;
+	border-radius: 30px;
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.27);
+
+	.opening-hours__top-title {
+		position: absolute;
+		display: inline-block;
+		top: -24px;
+		background: #fff;
+		border-radius: 30px;
+		font-size: 24px;
+		font-weight: 700;
+		padding: 12px 30px;
+		line-height: 1;
+		left: 50%;
+		transform: translateX(-50%);
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.18);
+
+	}
+
+	.opening-hours__title {
+		color: #fff;
+		font-size: 24px;
+		font-weight: 700;
+		text-transform: uppercase;
+		text-align: center;
+		margin-bottom: 12px;
+	}
+}
+
+.opening-hours__items {
+	text-align: center;
+
+	.opening-hours__item {
+		margin-bottom: 15px;
+	}
+
+	.opening-hours__item__title {
+		color: #000000;
+		font-size: 24px;
+		font-weight: 700;
+	}
+
+	.opening-hours__item__time {
+		color: #fff;
+		font-size: 18px;
+		font-weight: 700;
+	}
+}
+
+.opening-hours__callcenter-open {
+	font-size: 18px;
+	color: #000;
+	max-width: 300px;
+	display: flex;
+	align-items: center;
+	margin: 40px auto 30px;
+
+	.support-icon {
+		min-width: 60px;
+		margin-right: 20px;
+		border-radius: 50%;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+	}
+}
+
+.opening-hours__bottom-desc {
+	max-width: 300px;
+	margin: 50px auto 0;
+	font-size: 14px;
+	text-align: center;
+	color: #000;
+}
+
+svg.opening-shape-left {
+	position: absolute;
+	top: 36%;
+	transform: translateY(-50%);
+
+	@media(max-width: 991px) {
+		display: none;
+	}
+}
+
+.opening-shape-right {
+	position: absolute;
+	top: 60px;
+	right: 170px;
+	z-index: -1;
+
+	@media(max-width: 1440px) {
+		right: 80px;
+	}
+
+	@media(max-width: 991px) {
+		display: none;
+	}
+}

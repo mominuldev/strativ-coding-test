@@ -1,0 +1,33 @@
+.review-section {
+	background: #00BDD2;
+	padding: 100px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 100vh;
+
+	.reviews-content-wrapper {
+		text-align: center;
+	}
+
+	.reviews-logo {
+		margin-bottom: 35px;
+	}
+
+	.reviews-icon {
+		margin-bottom: 45px;
+	}
+
+	.reviews-text {
+		color: #fff;
+		font-size: 22px;
+		font-weight: 600;
+	}
+
+	.jumpin_btn {
+		margin-bottom: 18px;
+	}
+}

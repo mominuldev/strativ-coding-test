@@ -1,0 +1,116 @@
+.page-template-tpl-contact-us-page, .page-template-tpl-find-us-page {
+	.page-content-top {
+		overflow: hidden;
+	}
+
+	.page-shape-bottom {
+		bottom: -10%;
+	}
+}
+
+
+.contact-info-section {
+	text-align: center;
+	background: $color__secondary;
+	padding: 74px 0;
+	position: relative;
+	z-index: 1;
+
+	.contact-info-list {
+		margin-bottom: 11px;
+	}
+
+	.contact-info-title {
+		color: #fff;
+		font-size: 24px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	.contact-info-text {
+		font-size: 42px;
+		color: $color__bg;
+		font-weight: 700;
+		text-transform: uppercase;
+		margin-bottom: 0;
+	}
+}
+
+// Contact Form 7 Styles
+
+.contact-form-section {
+	padding: 100px 0 225px;
+	position: relative;
+
+	@media(max-width: 767px) {
+		padding: 40px 0 100px;
+	}
+}
+
+.contact-form-wrapper {
+	padding: 92px 30px 100px;
+	background: #fff;
+	border-radius: 17px;
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.27);
+
+	@media(max-width: 767px) {
+		padding: 40px 33px;
+	}
+
+	.wpcf7-list-item-label {
+		font-size: 24px;
+		font-weight: 700;
+		color: #00b3cc;
+	}
+
+	.wpcf7-submit {
+		border-radius: 40px;
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.18);
+		font-size: 25px;
+		font-weight: 700;
+		text-transform: uppercase;
+		padding: 16px 53px;
+		line-height: 1;
+		margin-top: 30px;
+	}
+
+	.wpcf7-list-item {
+		margin-left: 0 !important;
+		display: flex !important;
+		align-items: center;
+		gap: 10px;
+	}
+
+	input[type="checkbox"] {
+		width: 42px;
+		height: 38px;
+		background: #F4F4F4;
+		border: 1px solid #C7C7C7;
+	}
+}
+
+
+
+.contact-form-title {
+	font-size: 28px;
+	font-weight: 700;
+	color: #454545;
+	max-width: 660px;
+	margin: 0 auto 38px;
+}
+
+
+p.location-lists {
+	font-size: 42px;
+	font-weight: 700;
+	color: #fff;
+	line-height: 52px;
+	margin: 0;
+}
+
+.page-template-tpl-burgess-hill-booking-page {
+	.page-shape-bottom {
+		bottom: -19%;
+	}
+
+}

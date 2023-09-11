@@ -1,0 +1,301 @@
+.banner {
+	position: relative;
+	height: 100vh;
+	min-height: 700px;
+	//background: $color__secondary;
+	//background-image: url("../images/banner_bg.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	overflow: hidden;
+
+	//#banner_video_bg {
+	//	width: 100vw;
+	//	height: 100vh;
+	//	-o-object-fit: cover;
+	//	object-fit: cover;
+	//	position: absolute;
+	//	left: 0;
+	//	right: 0;
+	//	top: 0;
+	//	bottom: 0;
+	//	z-index: -1;
+	//}
+
+	&__video {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		pointer-events: none;
+		overflow: hidden;
+
+
+		iframe {
+			width: 100vw;
+			height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+			min-height: 100vh;
+			min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+
+	@media (max-width: 991px) {
+		min-height: 500px;
+	}
+
+	@media (max-width: 767px) {
+		min-height: 400px;
+	}
+
+	.modal-content {
+		background-color: #000;
+		border: 0;
+		border-radius: 0;
+		//background-image: url(//ifchorgalbraiths.com/wp-content/themes/ifchor/assets/css/../images/banner_video_poster.jpg);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	.ifchor-close-btn {
+		position: absolute;
+		color: #fff;
+		top: -28px;
+		right: 0;
+		font-size: 20px;
+		width: auto;
+		text-transform: uppercase;
+		background: 0 0;
+		border: 0;
+		padding: 0;
+	}
+
+	#banner_video_bg, #canvas {
+		width: 100vw;
+		height: 100vh;
+		object-fit: cover;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		z-index: -1;
+	}
+
+	&__image {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		z-index: 1;
+
+		img {
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	&__logo {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+
+		img {
+			max-width: 775px;
+			width: 100%;
+		}
+	}
+
+
+
+	&__content {
+		position: absolute;
+		width: 100%;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 99;
+	}
+
+	&__title {
+		font-size: 80px;
+		font-weight: 800;
+		color: $color__white;
+
+		span {
+			color: $color__primary;
+			font-weight: 700;
+		}
+
+		@media (max-width: 991px) {
+			font-size: 4.3rem;
+		}
+	}
+
+	&__btn-title {
+		margin-bottom: 6px;
+	}
+
+	&__btn-title {
+		color: #fff;
+		font-weight: 700;
+		font-size: 16px;
+	}
+
+	&__button {
+		&:hover {
+			background: $color__white;
+			color: $color__secondary;
+
+			svg path {
+				fill: $color__secondary;
+			}
+
+		}
+	}
+
+	&__button-wrapper {
+		display: inline-block;
+		text-align: center;
+	}
+
+	svg.bottom-icon {
+		position: absolute;
+		bottom: 0;
+		z-index: 2;
+		left: 13%;
+	}
+
+	&.banner-burgess {
+
+		.banner__logo {
+			display: block;
+			text-align: center;
+		}
+
+		.banner__content {
+			position: static;
+			transform: none;
+			height: 100%;
+			display: flex;
+			align-items: center;
+		}
+
+		.banner__content-wrapper {
+			margin-top: -80px;
+		}
+	}
+}
+
+.page-template-tpl-home-page {
+	.mfp-iframe-holder .mfp-content {
+		max-width: 1400px;
+	}
+
+	.mfp-close-btn-in .mfp-close {
+		font-size: 20px;
+		text-transform: uppercase;
+	}
+}
+
+.banner__arrow {
+	position: absolute;
+	bottom: 50px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.banner-location__location {
+	margin: -105px 0 0 0;
+	padding: 0;
+	list-style: none;
+
+	li {
+		display: inline-block;
+		position: relative;
+
+		&:not(:last-child) {
+			&:before {
+				content: '';
+				position: absolute;
+				height: 7px;
+				width: 7px;
+				background: $color__bg;
+				border-radius: 50%;
+				bottom: 13px;
+				right: -7px;
+			}
+		}
+
+		&:not(:last-child) {
+			margin-right: 15px;
+			padding-right: 15px;
+		}
+
+		a {
+			color: $color__white;
+			font-weight: 800;
+			font-size: 24px;
+
+			&:hover {
+				color: $color__primary;
+			}
+		}
+	}
+}
+
+
+/* ============================
+   #Sustainability Banner
+   ============================ */
+
+.ig-banner {
+	height: 870px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: repeat;
+	display: flex;
+	align-items: center;
+
+	@media (max-width: 991px) {
+		height: auto;
+		padding: 100px 0;
+	}
+
+	&__logo {
+		margin-bottom: 46px;
+		max-width: 300px;
+	}
+
+	&__title {
+		font-size: 68px;
+		font-weight: 700;
+		color: #fff;
+		max-width: 500px;
+
+		&.width-620 {
+			max-width: 620px;
+		}
+
+		@media (max-width: 991px) {
+			font-size: 60px;
+		}
+
+		@media (max-width: 767px) {
+			font-size: 40px;
+		}
+	}
+
+	.banner-bottom-icon {
+		margin-top: 17px;
+	}
+}

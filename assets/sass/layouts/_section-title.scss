@@ -1,0 +1,39 @@
+.section-heading {
+	position: relative;
+	margin: 0 auto 70px;
+
+	.section-title {
+		color: $color__heading;
+		font-size: 67px;
+		font-weight: 900;
+		position: relative;
+		z-index: 2;
+		letter-spacing: -0.02em;
+
+		&.title-light {
+			color: $color__white;
+			text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+		}
+
+		@media(max-width: 991px) {
+			font-size: 40px;
+		}
+	}
+
+	.section-subtitle {
+		color: $color__primary;
+		font-size: 14px;
+		font-weight: 700;
+		text-transform: uppercase;
+		position: relative;
+		z-index: 2;
+		margin-bottom: 15px;
+	}
+}
+
+.section-newsletter-subtitle {
+	color: #4D5457;
+	font-size: 34px;
+	font-weight: 900;
+	margin-bottom: 15px;
+}

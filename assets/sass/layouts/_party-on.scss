@@ -1,0 +1,137 @@
+.content-box-top, .single-package, .party-info {
+	background: #fff;
+	border-radius: 17px;
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.27);
+}
+
+.page-template-tpl-burgess-hill-party-on-page {
+	.page-shape-top {
+		top: -7.5%;
+	}
+}
+
+.parties-section {
+	padding-bottom: 270px;
+
+	@media(max-width: 991px) {
+		padding-bottom: 100px;
+	}
+}
+
+
+.content-box-top {
+	margin-bottom: 75px;
+}
+
+.content-box-top, .party-info {
+	padding: 70px 75px;
+
+	@media(max-width: 991px) {
+		padding: 40px 30px;
+	}
+
+	h2 {
+		color: #454545;
+		font-size: 32px;
+		line-height: 40px;
+		font-weight: 700;
+		margin-bottom: 17px;
+
+		@media(max-width: 991px) {
+			font-size: 24px;
+		}
+	}
+
+	p {
+
+		@media(max-width: 991px) {
+			font-size: 18px;
+		}
+	}
+
+	.party-description {
+
+		p {
+			margin-bottom: 0;
+			@media(max-width: 991px) {
+				font-size: 18px;
+			}
+		}
+	}
+
+	ul {
+		padding: 0;
+		margin-left: 20px;
+
+		li {
+			@media(max-width: 991px) {
+				font-size: 18px;
+			}
+		}
+	}
+}
+
+.single-package {
+	position: relative;
+	margin-bottom: 80px;
+	padding: 50px 50px 20px;
+	min-height: 365px;
+
+	@media(max-width: 991px) {
+		margin-bottom: 50px;
+	}
+
+	@media(max-width: 576px) {
+		padding: 50px 30px 30px;
+	}
+
+	.packge-title {
+		position: absolute;
+		top: -26px;
+		left: 50%;
+		transform: translateX(-50%);
+		background: $color__secondary;
+		color: #fff;
+		border-radius: 30px;
+		display: inline-block;
+		font-size: 24px;
+		padding: 12px 30px;
+		text-align: center;
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.18);
+		width: max-content;
+
+		@media(max-width: 380px) {
+			font-size: 20px;
+		}
+	}
+
+	.package-header {
+		margin-bottom: 20px;
+	}
+
+	.package-description {
+		margin: 0;
+	}
+
+	.package-price {
+		margin: 0;
+		font-size: 28px;
+		font-weight: 700;
+		color: #454545;
+		line-height: 1.1;
+	}
+
+	.packege-feature {
+		font-size: 18px;
+		font-weight: 400;
+	}
+
+	p {
+		margin-bottom: 5px;
+	}
+
+	ul {
+		padding: 0;
+		margin-left: 20px;
+	}
+}
